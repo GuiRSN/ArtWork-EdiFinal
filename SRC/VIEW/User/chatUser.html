@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar e Bottom Navigation Bar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="../../../PUBLIC/CSS/style.css">
+    <link rel="stylesheet" href="../../../PUBLIC/CSS/chat.css">
+
+
+
+</head>
+<body>
+    <div class="Sidebar">
+        <h2>Sidebar</h2>
+        <a href="./feedUser.html" class="active-link"><i class="fas fa-home"></i><span>Menu</span></a>
+        <a href="./pesquisarUser.html"><i class="fas fa-search"></i><span>Pesquisa</span></a>
+        <a href="./perfilUsuario.html"><i class="fas fa-user"></i><span>Perfil</span></a>
+        <a href="./carrinhoUsuario.html"><i class="fas fa-shopping-cart"></i><span>Carrinho</span></a>
+        <a href="./chatUser.html"><i class="fas fa-comment-dots"></i><span>Chat</span></a>
+        <a href="./configuracaoUsuario.html"><i class="fas fa-cogs"></i><span>Configurações</span></a>
+        <!-- Mover o botão Logout para o final da Sidebar -->
+        <a href="../login.html"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        <div class="magic-indicator"></div>
+    </div>
+    <header class="sticky-top">
+      
+        <nav class="navbar navbar-light bg-light">
+            <div class="flex-container" id="logoPrincipal"> 
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                        <img src="../../../PUBLIC/IMG/loso-recortada.png" alt="" class="logo1" style="width: 180px; margin-left: 120px;">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <img src="../../../PUBLIC/IMG/logo-projeto-sem-fundo.png" alt="" class="logo2" style="width: 60px;">
+                    </div>
+                </div>
+            </div>
+        </nav>
+      
+    </header>  
+
+    <div class="content">
+        <div class="user-list">
+            <h3>Lista de Usuários</h3>
+            <ul>
+                <li class="active-user">Usuário 1</li>
+                <li>Usuário 2</li>
+                <li>Usuário 3</li>
+                <li>Usuário 4</li>
+            </ul>
+        </div>
+        <div class="chat">
+            <div class="chat-header">
+                <h3>Chat com Usuário</h3>
+            </div>
+            <div class="chat-messages">
+                <!-- As mensagens do chat serão exibidas aqui -->
+            </div>
+            <div class="chat-input">
+                <input type="text" id="message-input" placeholder="Digite sua mensagem">
+                <button id="send-button">Enviar</button>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="bottom-navbar bottom-bar">
+        <a href="./feedUser.html" class="active-link">
+            <i class="fas fa-home"></i>
+            <span>Menu</span>
+        </a>
+        <a href="./pesquisarUser.html">
+            <i class="fas fa-search"></i>
+            <span>Pesquisa</span>
+        </a>
+        <a href="./perfilUsuario.html">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </a>
+        <a href="./carrinhoUsuario.html">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Carrinho</span>
+        </a>
+        <a href="./chatUser.html">
+            <i class="fas fa-comment-dots"></i>
+            <span>Chat</span>
+        </a>
+        <a href="./configuracaoUsuario.html">
+            <i class="fas fa-cogs"></i>
+            <span>Configurações</span>
+        </a>
+        <a href="../login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../../../PUBLIC/JS/SIDEBAR.js"> </script>
+    <script src="../../../PUBLIC/JS/CHAT.JS"> </script>
+</body>
+</html>
+</html>

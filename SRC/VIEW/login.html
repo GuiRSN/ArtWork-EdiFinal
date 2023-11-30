@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/0c1a40ebd1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../PUBLIC/CSS/login.css" type="text/css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class="row border rounded p-3 bg-white shadow caixa-area">
+            <!-- Caixa Esquerda -->
+            <div class="col-md-6 border rounded-4 d-flex justify-content-center align-items-center caixa-esquerda flex-column" style="background-color:rgba(0, 119, 255, 0.884) ;">
+                <div class="imagem-comum">
+                    <img src="../../PUBLIC/IMG/logo-projeto-sem-fundo.png" class="img-fluid" style="width:250px">
+                </div>
+                <p class="text-white fs-2" style="font-family: 'Courier New', Courier, monospace;">Logar-se</p>
+                <small class="text-white text-wrap text-center">Bem-vindo de volta</small>
+            </div>
+
+            <!-- Caixa Direita -->
+            <div class="col-md-6 caixa-direita">
+                <div class="row align-items-center">
+                    <div class="header-text mb-4">
+                        <p>Olá, novamente</p>
+                        <p>Estamos contentes pelo seu retorno</p>
+                    </div>
+                    <form id="loginForm">
+                        <div class="input-group mb-3">
+                            <input type="email" id="Email" class="form-control form-control-lg bg-light fs-6" placeholder="Email" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <input type="password" id="senha" class="form-control form-control-lg bg-light fs-6" placeholder="Senha" required>
+                        </div>
+                        <div class="input-group mb-3">
+                            <button class="btn btn-lg btn-success w-100" id="loginButton">Logar</button>
+                        </div>
+                    </form>
+                    <div id="mensagemErro" style="color: red;"></div>
+                    
+                    <div class="row">
+                        <span class="col-6">
+                            <a href="#">Recupere sua senha</a>
+                        </span>
+                        <span class="col-6">
+                            <a href="./Cadastro.html">Cadastrar usuário</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------------------SCRIPT--------------------------------------------------------- -->
+<script src="https://kit.fontawesome.com/0c1a40ebd1.js" crossorigin="anonymous"></script>
+<script src="/JS/login.js" type="module"></script>
+</body>
+</html>

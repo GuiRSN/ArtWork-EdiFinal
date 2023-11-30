@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar e Bottom Navigation Bar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="../../../PUBLIC/CSS/style.css">
+</head>
+<body>
+    <div class="Sidebar">
+        <h2>Sidebar</h2>
+        <a href="./feed.html" class="active-link"><i class="fas fa-home"></i><span>Menu</span></a>
+        <a href="./pesquisar.html"><i class="fas fa-search"></i><span>Pesquisa</span></a>
+        <a href="./perfilArtista.html"><i class="fas fa-user"></i><span>Perfil</span></a>
+        <a href="./vendas.html"><i class="fas fa-shopping-cart"></i><span>Vendas</span></a>
+        <a href="./chat.html"><i class="fas fa-comment-dots"></i><span>Chat</span></a>
+        <a href="./configuracao.html"><i class="fas fa-cogs"></i><span>Configurações</span></a>
+        <!-- Mover o botão Logout para o final da Sidebar -->
+        <a href="../login.html"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        <div class="magic-indicator"></div>
+    </div>
+    <header class="sticky-top">
+      
+        <nav class="navbar navbar-light bg-light">
+            <div class="flex-container" id="logoPrincipal"> 
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                        <img src="../../../PUBLIC/IMG/loso-recortada.png" alt="" class="logo1" style="width: 180px; margin-left: 120px;">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <img src="../../../PUBLIC/IMG/logo-projeto-sem-fundo.png" alt="" class="logo2" style="width: 60px;">
+                    </div>
+                </div>
+            </div>
+        </nav>
+      
+    </header>  
+    
+    <div class="content">
+        <section>
+            <div class="container">
+                <div class="col-6">
+                    <ul id="configuraLista" class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="./editarPerfil.html">Editar Perfil</a></li>
+                        <li class="list-group-item"><a href="./vendas.html">Vendas</a></li>
+                        <li class="list-group-item"><a href="http://">Configurações Avançadas</a></li>
+                        <li class="list-group-item"><a href="http://">Política de Privacidade</a></li>
+                        <li class="list-group-item"><a href="../../VIEW/login.html">Sair</a></li>
+                      </ul>
+                </div>
+                <div class="col-6"></div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="bottom-navbar bottom-bar">
+        <a href="./feed.html" class="active-link">
+            <i class="fas fa-home"></i>
+            <span>Menu</span>
+        </a>
+        <a href="./pesquisar.html">
+            <i class="fas fa-search"></i>
+            <span>Pesquisa</span>
+        </a>
+        <a href="./perfilArtista.html">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </a>
+        <a href="./vendas.html">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Vendas</span>
+        </a>
+        <a href="./chat.html">
+            <i class="fas fa-comment-dots"></i>
+            <span>Chat</span>
+        </a>
+        <a href="./configuracao.html">
+            <i class="fas fa-cogs"></i>
+            <span>Configurações</span>
+        </a>
+        <a href="../login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript para alternar a classe "expanded" na barra lateral
+        const sidebar = document.querySelector('.Sidebar');
+
+        sidebar.addEventListener('mouseenter', () => {
+            sidebar.classList.add('expanded');
+        });
+
+        sidebar.addEventListener('mouseleave', () => {
+            sidebar.classList.remove('expanded');
+        });
+
+        // JavaScript para o indicador mágico
+        const links = document.querySelectorAll('.Sidebar a');
+        const indicator = document.querySelector('.magic-indicator');
+
+        links.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                links.forEach((otherLink) => {
+                    otherLink.classList.remove('active-link');
+                });
+                link.classList.add('active-link');
+                const topPosition = link.offsetTop;
+                indicator.style.transform = `translateY(${topPosition}px)`;
+            });
+        });
+    </script>
+</body>
+</html>

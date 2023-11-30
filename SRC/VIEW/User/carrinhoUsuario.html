@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar e Bottom Navigation Bar</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="../../../PUBLIC/CSS/style.css">
+    <style>
+        .cardEstilo {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-body {
+            flex: 1;
+        }
+
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="Sidebar">
+        <h2>Sidebar</h2>
+        <a href="./feedUser.html" class="active-link"><i class="fas fa-home"></i><span>Menu</span></a>
+        <a href="./pesquisarUser.html"><i class="fas fa-search"></i><span>Pesquisa</span></a>
+        <a href="./perfilUsuario.html"><i class="fas fa-user"></i><span>Perfil</span></a>
+        <a href="./carrinhoUsuario.html"><i class="fas fa-shopping-cart"></i><span>Carrinho</span></a>
+        <a href="./chatUser.html"><i class="fas fa-comment-dots"></i><span>Chat</span></a>
+        <a href="./configuracaoUsuario.html"><i class="fas fa-cogs"></i><span>Configuraçõess</span></a>
+        <!-- Mover o botão Logout para o final da Sidebar -->
+        <a href="../login.html"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        <div class="magic-indicator"></div>
+    </div>
+    <header class="sticky-top">
+      
+        <nav class="navbar navbar-light bg-light">
+            <div class="flex-container" id="logoPrincipal"> 
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                        <img src="../../../PUBLIC/IMG/loso-recortada.png" alt="" class="logo1" style="width: 180px; margin-left: 120px;">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <img src="../../../PUBLIC/IMG/logo-projeto-sem-fundo.png" alt="" class="logo2" style="width: 60px;">
+                    </div>
+                </div>
+            </div>
+        </nav>
+      
+    </header>  
+
+    
+    
+    <div class="content">
+        <section>
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="row">
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/mexico-1311551_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Alebrijes - Esculturas tradicionais mexicanas</h5>
+                                <p class="card-text">A cultura dos alebrijes está espalhada por todo o México, tenha a energia de um destes protetores espirituais em sua casa</p>
+                                <p class="card-text">R$ 50,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/ceramics-7250708_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Peças esculpidas em barro</h5>
+                                <p class="card-text">Tenha objetos exclusivos feito de barro, sob encomenda, para ver oprções disponíveis acesse este perfil</p>
+                                <p class="card-text">Preço a combinar</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/elephant-3204758_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Elefante em sucupira</h5>
+                                <p class="card-text">Elefante esculpido em madeira sucupira, peça única</p>
+                                <p class="card-text">R$ 250,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/leather-passport-holder-7006898_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Caderneta socialista</h5>
+                                <p class="card-text">Caderneta costurada manualmente, feita de couro e pirografa (desenho feito com queimaduras)</p>
+                                <p class="card-text">R$ 75,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/leather-passport-holder-7006901_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Caderneta Onça Da Mata</h5>
+                                <p class="card-text">Caderneta rústica costurada manualmente feita couro e desenho pirografado (desenho feito com queimaduras)</p>
+                                <p class="card-text">R$ 115,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/mandala-2684935_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Mandalas Flutuantes</h5>
+                                <p class="card-text">Mandalas feitas para você pendurar onde quiser! Faço de vários tamanhos. Mais informações neste perfil.</p>
+                                <p class="card-text">R$ 35,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/laos-1932674_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Pulseiras/Braceletes</h5>
+                                <p class="card-text">Pulseiras feitas manualmente com linhas, em todas as cores</p>
+                                <p class="card-text">R$ 25,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/pendant-7633875_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Coração de Serpente</h5>
+                                <p class="card-text">Pingente feito manualmente com a pedra ágata verde e arame</p>
+                                <p class="card-text">R$ 350,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                        <div class="card cardEstilo">
+                            <img class="card-img-top" src="../../../PUBLIC/IMG/Feed Users/sculpture-5464676_1280.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Escultura em madeira BUDA</h5>
+                                <p class="card-text">Transfiguramos símbolos religiosos em arte, tudo é expressão! As encarnações de Buda vem para deixar ensinamentos para que todos os seres alcacem a iluminação.</p>
+                                <p class="card-text">R$ 90,00</p>
+                                <a href="#" class="btn btn-primary">Comprar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <div class="bottom-navbar bottom-bar">
+        <a href="./feedUser.html" class="active-link">
+            <i class="fas fa-home"></i>
+            <span>Menu</span>
+        </a>
+        <a href="./pesquisarUser.html">
+            <i class="fas fa-search"></i>
+            <span>Pesquisa</span>
+        </a>
+        <a href="./perfilUsuario.html">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </a>
+        <a href="./carrinhoUsuario.html">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Carrinho</span>
+        </a>
+        <a href="./chatUser.html">
+            <i class="fas fa-comment-dots"></i>
+            <span>Chat</span>
+        </a>
+        <a href="./configuracaoUsuario.html">
+            <i class="fas fa-cogs"></i>
+            <span>Configurações</span>
+        </a>
+        <a href="../login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript para alternar a classe "expanded" na barra lateral
+        const sidebar = document.querySelector('.Sidebar');
+
+        sidebar.addEventListener('mouseenter', () => {
+            sidebar.classList.add('expanded');
+        });
+
+        sidebar.addEventListener('mouseleave', () => {
+            sidebar.classList.remove('expanded');
+        });
+
+        // JavaScript para o indicador mágico
+        const links = document.querySelectorAll('.Sidebar a');
+        const indicator = document.querySelector('.magic-indicator');
+
+        links.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                links.forEach((otherLink) => {
+                    otherLink.classList.remove('active-link');
+                });
+                link.classList.add('active-link');
+                const topPosition = link.offsetTop;
+                indicator.style.transform = `translateY(${topPosition}px)`;
+            });
+        });
+    </script>
+</body>
+</html>

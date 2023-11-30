@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.17.1/font/bootstrap-icons.css">
+
+    <link rel="stylesheet" href="../../../PUBLIC/CSS/style.css">
+    
+</head>
+<body>
+    <div class="Sidebar">
+        <h2>Sidebar</h2>
+        <a href="./feedUser.html" class="active-link"><i class="fas fa-home"></i><span>Menu</span></a>
+        <a href="./pesquisarUser.html"><i class="fas fa-search"></i><span>Pesquisa</span></a>
+        <a href="./perfilUsuario.html"><i class="fas fa-user"></i><span>Perfil</span></a>
+        <a href="./carrinhoUsuario.html"><i class="fas fa-shopping-cart"></i><span>Carrinho</span></a>
+        <a href="./chatUser.html"><i class="fas fa-comment-dots"></i><span>Chat</span></a>
+        <a href="./configuracaoUsuario.html"><i class="fas fa-cogs"></i><span>Configurações</span></a>
+        <!-- Mover o botão Logout para o final da Sidebar -->
+        <a href="../login.html"><i class="fas fa-sign-out-alt"></i><span>Logout</span></a>
+        <div class="magic-indicator"></div>
+    </div>
+    <header class="sticky-top">
+      
+        <nav class="navbar navbar-light bg-light">
+            <div class="flex-container" id="logoPrincipal"> 
+                <div class="row">
+                    <div class="col-8 col-sm-8 col-md-8 col-lg-8 col-xl-8">
+                        <img src="../../../PUBLIC/IMG/loso-recortada.png" alt="" class="logo1" style="width: 180px; margin-left: 120px;">
+                    </div>
+                    <div class="col-4 col-sm-4 col-md-4 col-lg-4 col-xl-4">
+                        <img src="../../../PUBLIC/IMG/logo-projeto-sem-fundo.png" alt="" class="logo2" style="width: 60px;">
+                    </div>
+                </div>
+            </div>
+        </nav>
+      
+    </header>  
+        
+        <!-- Content -->
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <!-- Profile Content -->
+                    <div class="col-12">
+                        <div class="container" id="EscopoPerfil">
+                            <div class="row" id="imagemPerfilCol">
+                              
+                                <div class="col-12 col-sm-5 col-md-5 col-lg-4 col-xl-3">
+                                    <img class="img-profile" width="200px" height="" src="../../../PUBLIC/IMG/PerfilUsuário/beanie-2562646_1280.jpg" alt="">
+                                    <h2 id="nomeUsuarioArtista">jon_miller12</h2>
+                                </div>
+                                <div class="col-12 col-sm-8 ">
+                                    <!-- Buttons for creating a work and editing profile -->
+                                    <button type="button" class="btn btn-outline-primary btn-block" style="max-width: 200px;">Criar uma publicação</button>
+                                    <button type="button" class="btn btn-outline-dark btn-block" style="max-width: 200px;">Editar Perfil</button>
+                                     <!-- Additional profile details (name, description) -->
+                                    <div class="row mt-3" id="nomeUsuario">
+                                        <div class="col">
+                                            <h1 class="name">Jon Miller</h1>
+                                        </div>
+                                    </div>
+                                    <div class="row" id="descricaoPerfil">
+                                        <div class="col">
+                                            <p class="descricaoUser">Aprecio a arte em todos seus seguimentos</p>
+                                        </div>
+                                    </div>
+                                        </div>
+                                    </div>                   
+                         
+                            <!-- Information about posts, followers, following, and ads -->
+                            <div class="row mt-3">
+                                <div class="col-6 col-sm-3">
+                                    <p class="profile-datas">
+                                        <strong> <span class="badge badge-primary badge-pill">14</span></strong> publicações
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <p class="profile-datas">
+                                        <strong> <span class="badge badge-primary badge-pill">5.300</span></strong> seguidores
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <p class="profile-datas">
+                                        <strong> <span class="badge badge-primary badge-pill">667</span></strong> seguindo
+                                    </p>
+                                </div>
+                                <div class="col-6 col-sm-3">
+                                    <p class="profile-datas">
+                                        <strong> <span class="badge badge-primary badge-pill">10</span></strong> anúncios
+                                    </p>
+                                </div>
+                            </div>
+
+                           
+
+                            <!-- Horizontal line -->
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <hr size="3" width="100%" color="#EEEEEE">
+                                </div>
+                            </div>
+
+                            <!-- Navigation menu for gallery and ads -->
+                            <div class="row mt-3">
+                                <ul class="nav nav-tabs" id="NavegadorPerfil">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" id="galeria-tab" data-toggle="tab" href="#galeria" role="tab" aria-controls="galeria" aria-selected="true">
+                                            <i class="bi bi-paint-bucket"></i> GALERIA
+                                        </a>
+                                    </li>
+                                    
+                            </div>
+
+                            <!-- Gallery and ads content -->
+                            <div class="row mt-3">
+                                <div class="col">
+                                    <div class="tab-content">
+                                        <div class="tab-pane fade show active" id="galeria" role="tabpanel" aria-labelledby="galeria-tab">
+                                            <div class="row" >
+                                                <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                                                    <div class="card mycard">
+                                                        <img src="../../../PUBLIC/IMG/PerfilUsuário/background-1214197.jpg" alt="..." class="card-img-top">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                                                    <div class="card mycard">
+                                                        <img src="../../../PUBLIC/IMG/PerfilUsuário/fantasy-4350993_1280.jpg" alt="..." class="card-img-top">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-lg-4 pb-3" style="max-width: 400px;">
+                                                    <div class="card mycard">
+                                                        <img src="../../../PUBLIC/IMG/PerfilUsuário/fractal-1232644.jpg" alt="..." class="card-img-top">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Adicione mais linhas de galeria aqui se necessário -->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="bottom-navbar bottom-bar">
+        <a href="./feedUser.html" class="active-link">
+            <i class="fas fa-home"></i>
+            <span>Menu</span>
+        </a>
+        <a href="./pesquisarUser.html">
+            <i class="fas fa-search"></i>
+            <span>Pesquisa</span>
+        </a>
+        <a href="./perfilUsuario.html">
+            <i class="fas fa-user"></i>
+            <span>Perfil</span>
+        </a>
+        <a href="./carrinhoUsuario.html">
+            <i class="fas fa-shopping-cart"></i>
+            <span>Carrinho</span>
+        </a>
+        <a href="./chatUser.html">
+            <i class="fas fa-comment-dots"></i>
+            <span>Chat</span>
+        </a>
+        <a href="./configuracaoUsuario.html">
+            <i class="fas fa-cogs"></i>
+            <span>Configurações</span>
+        </a>
+        <a href="../login.html">
+            <i class="fas fa-sign-out-alt"></i>
+            <span>Logout</span>
+        </a>
+    </div>
+    <!-- JavaScript and Bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        // JavaScript para alternar a classe "expanded" na barra lateral
+        const sidebar = document.querySelector('.Sidebar');
+
+        sidebar.addEventListener('mouseenter', () => {
+            sidebar.classList.add('expanded');
+        });
+
+        sidebar.addEventListener('mouseleave', () => {
+            sidebar.classList.remove('expanded');
+        });
+
+        // JavaScript para o indicador mágico
+        const links = document.querySelectorAll('.Sidebar a');
+        const indicator = document.querySelector('.magic-indicator');
+
+        links.forEach((link) => {
+            link.addEventListener('click', (e) => {
+                links.forEach((otherLink) => {
+                    otherLink.classList.remove('active-link');
+                });
+                link.classList.add('active-link');
+                const topPosition = link.offsetTop;
+                indicator.style.transform = `translateY(${topPosition}px)`;
+            });
+        });
+    </script>
+</body>
+</html>

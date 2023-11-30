@@ -1,0 +1,89 @@
+/* Estilos padrão */
+.content {
+  display: flex;
+}
+
+.user-list {
+  flex: 1;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+}
+
+.user-list h3 {
+  text-align: center;
+}
+
+.user-list ul {
+  list-style: none;
+  padding: 0;
+}
+
+.user-list li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+.user-list li.active-user {
+  background-color: #ccc;
+}
+
+.chat {
+  flex: 2;
+  padding: 10px;
+}
+
+.chat-header h3 {
+  text-align: center;
+}
+
+.chat-messages {
+  height: 300px;
+  border: 1px solid #ccc;
+  overflow-y: scroll;
+  padding: 10px;
+}
+
+.chat-input {
+  display: flex;
+  margin-top: 10px;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 5px;
+}
+
+.chat-input button {
+  padding: 5px 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+  .user-list {
+    border-right: none;
+  }
+  .user-list, .chat {
+    flex: auto;
+  }
+  .chat-messages {
+    height: 150px;
+  }
+}
+@media (max-width: 767px) {
+  .content {
+    flex-direction: column;
+  }
+  .user-list, .chat {
+    flex: 1;
+  }
+  .chat-messages {
+    height: auto; /* Redefinir a altura para se ajustar ao conteúdo */
+  }
+}

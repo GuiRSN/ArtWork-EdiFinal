@@ -1,0 +1,17 @@
+.mycard{
+  border: 0px solid rgba(0, 0, 0, .125) !important;
+  border-radius: 0.rem !important;
+  border-top-right-radius: 0.rem !important;
+  border-top-left-radius: 0.rem !important;
+
+}
+#configuraLista{
+  list-style-type: none
+}
+#cardEstilo{
+  margin-top: 20px;
+}
+.cardEstilo{
+  margin-top: 20px;
+  margin-right: 15px;
+}

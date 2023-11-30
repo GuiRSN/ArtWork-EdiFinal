@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+
+body{
+  font-family: 'poppins', sans-serif;
+  background: #ececec;
+
+}
+
+
+.social-button.facebook:hover {
+  background-color: #1877F2; /* Cor de fundo do Facebook */
+  color: white; /* Cor do ícone ao passar o mouse */
+}
+
+.social-button.google:hover {
+  background-color: #DB4437; /* Cor de fundo do Google */
+  color: white; /* Cor do ícone ao passar o mouse */
+}
+
+.social-button.hotmail:hover {
+  background-color: #D44638; /* Cor de fundo do Hotmail */
+  color: white; /* Cor do ícone ao passar o mouse */
+}
+
+
+.input-group input.form-control:hover {
+  border-color: green;
+  box-shadow: 0 0 0 0.25rem rgba(40, 167, 69, 0.25);
+}
+
+
+
+/* -----------------------------CONTAINER DE LOGIN--------------------------------- */
+.caixa-area{
+  width: 930px;
+}
+/* /* -----------------------------CAIXA DIREITA--------------------------------- */
+.caixa-direita{
+  padding: 40px 30px 40px 40px;
+}
+/* -----------------------------PLACEHOLDER CUSTOMIZADO DE LOGIN--------------------------------- */ */
+
+::placeholder{
+  font-size: 16px;
+}
+/* -----------------------------PARA TELAS PEQUENAS--------------------------------- */
+@media only screen and (max-width: 768px){
+  .caixa-area{
+    margin: 0 10px;
+  }
+  .caixa-esquerda{
+    height: 100px;
+    overflow: hidden;
+  }
+  .caixa-direita{
+    padding: 20px;
+  }
+}
